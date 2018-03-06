@@ -1,5 +1,14 @@
 # Pinhole-Fisheye-Mapping
+## A monocular dense mapping system for pinhole and fisheye cameras
 
-This is a monocular dense mapping system following the IROS 2018 submission **Adaptive Baseline Monocular Dense Mapping with Inter-frame Depth Propagation**, Kaixuan Wang, Shaojie Shen.
+This is a monocular dense mapping system following the IROS 2018 submission **Adaptive Baseline Monocular Dense Mapping with Inter-frame Depth Propagation**, Kaixuan Wang, Shaojie Shen. The implementation will be open sourced after the acceptance of the paper.
 
-The implementation will be open sourced lately.
+Benefiting from the proposed adaptive baseline matching cost computation, belief propagation based depth extraction and depth refinement using inter-frame propagated depth filter, our system can generate high-quality depth maps in real-time using a pinhole or a fisheye camera.
+An example of the system output is shown:
+
+<img src="fig/mapping_example.png" alt="mapping example">
+
+A video can be used to illustrate the pipeline and the performance of our system:
+
+<a href="https://youtu.be/sjxMjsl-fD4" target="_blank"><img src="http://img.youtube.com/vi/sjxMjsl-fD4/0.jpg" 
+alt="video" width="240" height="180" border="10" /></a>
