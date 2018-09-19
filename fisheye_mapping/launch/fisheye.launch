@@ -1,0 +1,22 @@
+<launch>
+  <node pkg="fisheye_mapping" type="fisheye_mapping_node" name="fisheye_mapping" clear_params="true" output="screen">
+
+    <param name="cam_width"  value="752" />
+    <param name="cam_height" value="480" />
+
+    <param name="calib_path" value="/home/wang/catkin_ws/src/open_source/Pinhole-Fisheye-Mapping/fisheye_mapping/config/polyfisheye.yaml" />
+
+    <!-- default map distence-->
+    <param name="default_max_distence" value="20"/>
+    <param name="default_min_distence" value="0.5" />
+
+    <!-- publish list -->
+    <param name="undistort_the_depth"  value="true"/>
+    <param name="publish_Cloud"        value="true"/>
+
+    <!-- if using synchronize image and pose-->
+    <remap from="~image" to="/djiros/image" />
+    <remap from="~posestamped" to="/vins_estimator/cur_pose" />
+
+  </node>   
+</launch>
