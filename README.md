@@ -33,13 +33,13 @@ We provide an example rosbag for you to test the project via [the link](https://
 
 ### 3.1 Download the code 
 
-Move the rospackage ```camera_model``` and ```fisheye_mapping``` into the ```catkin_ws/src```. **Please Note** the ```camera_model``` is the package from [gaowenliang](https://github.com/gaowenliang). The namespace in the ```camera_model``` is not consistent with that of the ```camera_model``` used in VINS-Mono. You may want to disable the VINS-Mono if it exists in your ```catkin_ws```. Please contact and push [gaowenliang](https://github.com/gaowenliang) if you want them to be consist :).
+Move the rospackage ```camera_model``` and ```fisheye_mapping``` into the ```catkin_ws/src```. **Please Note** the ```camera_model``` is the package from [gaowenliang](https://github.com/gaowenliang). The namespace in the ```camera_model``` is not consistent with that of the ```camera_model``` used in VINS-Mono. You may want to disable the VINS-Mono if it exists in your ```catkin_ws```. Please contact and push [gaowenliang](https://github.com/gaowenliang) if you want them to be consistent :).
 
 ### 3.2 Compile
 
-Change the line 28 and line 29 in the ```CMakeLists.txt``` accoding to the GPU you use.
+Change the line 28 and line 29 in the ```CMakeLists.txt``` according to the GPU you use.
 
-Change the line 7 in the ```launch/fisheye.launch``` accoding to your own environment to ```config/polyfisheye.yaml```.
+Change the line 7 in the ```launch/fisheye.launch``` according to your own environment to ```config/polyfisheye.yaml```.
 
 Just ```catkin_make``` in the ```catkin_ws```.
 
@@ -53,5 +53,4 @@ Just
  
 ## 4.0 Acknowledgement
 
-As you may find out, we uses many codes from [REMODE](https://github.com/uzh-rpg/rpg_open_remode) to develop the project. Thanks a lot!
-
+As you may find out, we use many codes from [REMODE](https://github.com/uzh-rpg/rpg_open_remode) to develop the project. Thanks a lot!
