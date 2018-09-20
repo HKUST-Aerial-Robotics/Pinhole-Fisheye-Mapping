@@ -50,7 +50,11 @@ Just
 ```roslaunch fisheye_mapping fisheye.launch``` and play the rosbag you downloaded.
 
  The depth map is published in ```/fisheye_mapping/colored_depthmap```.
- 
-## 4.0 Acknowledgement
+
+## 4.0 Fisheye calibration
+
+Here, we use the ```Polynomial Fisheye Camera``` from [camera_model](https://github.com/gaowenliang/camera_model) to calibrate fisheye cameras. Please find the paper [Dual-fisheye omnidirectional stereo](https://ieeexplore.ieee.org/document/8206587/) for more details. The output depth map is not pixel-corresponding to the input images. Instead, we use a very simple way to represent the fisheye image. You can follow the function ```generate_cloud_with_intensity``` in line 540 of ```src/cuda_functions.cu``` to learn how to project each pixel as a 3D point in the camera frame.
+
+## 5.0 Acknowledgement
 
 As you may find out, we use many codes from [REMODE](https://github.com/uzh-rpg/rpg_open_remode) to develop the project. Thanks a lot!
