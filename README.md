@@ -1,4 +1,4 @@
-# Pinhole-Fisheye-Mapping: Fisheye Branch
+# Pinhole-Fisheye-Mapping: Pinhole Branch
 ## A monocular dense mapping system for pinhole and fisheye cameras
 
 This is a monocular dense mapping system following the IROS 2018 submission **Adaptive Baseline Monocular Dense Mapping with Inter-frame Depth Propagation**, Kaixuan Wang, Shaojie Shen. The implementation will be open source after the acceptance of the paper.
