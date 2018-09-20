@@ -27,7 +27,7 @@ Here we use CUDA 8.0. CUDA 9.0 has not been tested.
 
 ## 2.0 Download the rosbag
 
-We provide an example rosbag for you to test the project via [the link](https://www.dropbox.com/s/xuae1kxuulcf11z/open_quadtree_mapping.bag?dl=0).
+We provide an example rosbag for you to test the project via [the link](https://www.dropbox.com/s/xuae1kxuulcf11z/open_quadtree_mapping.bag?dl=0) (Yes, it is the same bag for [open_quadtree_mapping](https://github.com/HKUST-Aerial-Robotics/open_quadtree_mapping)).
 
 ## 3.0 Run the code
 
